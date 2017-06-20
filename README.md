@@ -23,7 +23,8 @@ REST API for people counting at the bus stop
 
   * **Code:** 200 <br />
     **Content:** 
-    <pre><code><cams>
+    ``` 
+    <cams>
         <cam id="1" name="cam1">
             <value timestamp="1496869786.02">17</value>
         </cam>
@@ -31,7 +32,7 @@ REST API for people counting at the bus stop
             <value timestamp="1496869786.02">17</value>
         </cam>
     </cams>
-    </code></pre>
+    ```
 * **Error Response:**
 
   * **Code:** 401 <br />
@@ -80,10 +81,12 @@ REST API for people counting at the bus stop
 
   * **Code:** 200 <br />
     **Content:**
-    <pre><code><cam id="1" name="cam1">
+    ```
+    <cam id="1" name="cam1">
         <value timestamp="1496869786.02">17</value>
         <value timestamp="1496869996.02">35</value>
-     </cam></code></pre>
+    </cam>
+     ```
 * **Error Response:**
 
   * **Code:** 410 <br />
@@ -136,14 +139,16 @@ REST API for people counting at the bus stop
 
   * **Code:** 200 <br />
     **Content:**
-    <pre><code><cams>
-      <cam id="1" name="cam1">
-       <avg_value end_timestamp="1496869786.02" start_timestamp="1496868549.16">55</avg_value>
-      </cam>
-      <cam id="2" name="cam2">
-       <avg_value end_timestamp="1496869786.02" start_timestamp="1496868549.16">41</avg_value>
-      </cam>
-     </cams></code></pre>
+    ```
+    <cams>
+        <cam id="1" name="cam1">
+            <avg_value end_timestamp="1496869786.02" start_timestamp="1496868549.16">55</avg_value>
+        </cam>
+        <cam id="2" name="cam2">
+            <avg_value end_timestamp="1496869786.02" start_timestamp="1496868549.16">41</avg_value>
+        </cam>
+    </cams>
+    ```
 * **Error Response:**
 
   * **Code:** 410 <br />
@@ -199,11 +204,13 @@ REST API for people counting at the bus stop
   
     * **Code:** 200 <br />
       **Content:**
-      <pre><code> `<cams>
+    ```
+    <cams>
         <cam id="1" name="cam1">
-         <avg_value end_timestamp="1496869786.02" start_timestamp="1496868549.16">55</avg_value>
+            <avg_value end_timestamp="1496869786.02" start_timestamp="1496868549.16">55</avg_value>
         </cam>
-       </cams>`</code></pre>
+    </cams>
+    ```
   * **Error Response:**
   
     * **Code:** 410 <br />
