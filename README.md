@@ -133,6 +133,7 @@ REST API for people counting at the bus stop
   **Required:**
    
      `start=[float]`
+     
      `end=[float]`
 
 * **Success Response:**
@@ -198,6 +199,7 @@ REST API for people counting at the bus stop
     **Required:**
      
        `start=[float]`
+       
        `end=[float]`
   
   * **Success Response:**
