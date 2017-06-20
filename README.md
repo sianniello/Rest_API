@@ -15,9 +15,6 @@ REST API for people counting at the bus stop
   
 *  **URL Params**
       None
-   <!--**Required:**-->
- 
-   <!--`id=[integer]`-->
 
 * **Data Params**
   None
@@ -26,14 +23,14 @@ REST API for people counting at the bus stop
 
   * **Code:** 200 <br />
     **Content:** 
-    <pre><code>`<cams>
+    <pre><code><cams>
         <cam id="1" name="cam1">
             <value timestamp="1496869786.02">17</value>
         </cam>
         <cam id="2" name="cam2">
             <value timestamp="1496869786.02">17</value>
         </cam>
-    </cams>`
+    </cams>
     </code></pre>
 * **Error Response:**
 
@@ -83,10 +80,10 @@ REST API for people counting at the bus stop
 
   * **Code:** 200 <br />
     **Content:**
-    <pre><code> `<cam id="1" name="cam1">
+    <pre><code><cam id="1" name="cam1">
         <value timestamp="1496869786.02">17</value>
         <value timestamp="1496869996.02">35</value>
-     </cam>`</code></pre>
+     </cam></code></pre>
 * **Error Response:**
 
   * **Code:** 410 <br />
@@ -139,14 +136,14 @@ REST API for people counting at the bus stop
 
   * **Code:** 200 <br />
     **Content:**
-    <pre><code> `<cams>
+    <pre><code><cams>
       <cam id="1" name="cam1">
        <avg_value end_timestamp="1496869786.02" start_timestamp="1496868549.16">55</avg_value>
       </cam>
       <cam id="2" name="cam2">
        <avg_value end_timestamp="1496869786.02" start_timestamp="1496868549.16">41</avg_value>
       </cam>
-     </cams>`</code></pre>
+     </cams></code></pre>
 * **Error Response:**
 
   * **Code:** 410 <br />
