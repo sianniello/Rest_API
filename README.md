@@ -240,7 +240,7 @@ REST API for people counting at the bus stop
       });
     ```
     
-    **Get last image**
+**Get last image**
 ----
   Returns last captured image from single camera.
 
