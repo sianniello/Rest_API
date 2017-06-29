@@ -239,3 +239,52 @@ REST API for people counting at the bus stop
         }
       });
     ```
+    
+    **Get last image**
+----
+  Returns last captured image from single camera.
+
+* **URL**
+
+  /cams/:id/get_image
+
+* **Method:**
+
+  `GET`
+  
+*  **URL Params**
+   
+   **Required:**
+ 
+   `id=[integer]`
+   `type=[integer]`
+
+* **Data Params**
+  None
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+    
+* **Error Response:**
+
+  * **Code:** 410 <br />
+    **Content:** `{ error : "Resource not available" }`
+
+  <!--OR-->
+
+  <!--* **Code:** 401 UNAUTHORIZED <br />-->
+    <!--**Content:** `{ error : "You are unauthorized to make this request." }`-->
+
+* **Sample Call:**
+
+    ```javascript
+    $.ajax({
+      url: "/cams/1/get_image?type=1",
+      dataType: "xml",
+      type : "GET",
+      success : function(r) {
+        console.log(r);
+      }
+    });
+    ```
